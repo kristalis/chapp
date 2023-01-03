@@ -19,8 +19,15 @@
         "postcss": "^8.1.14",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
-        "resolve-url-loader": "^5.0.0",
+        "resolve-url-loader": "^4.0.0",
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
+        "@mui/material": "^5.11.3",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0"
     }
 }

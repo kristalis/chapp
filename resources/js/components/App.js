@@ -1,11 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Login from "./Auth/Login";
+import Dashboard from "./Dashboard/Dashboard";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import {ProtectedRoute} from "./ProtectedRoute/ProtectedRoute";
 
 function App() {
     return (
-        <div>
-            Hello
-        </div>
+        <React.Fragment>
+            <BrowserRouter>
+                <Route path={'/app/login'}>
+                    <Login/>
+                </Route>
+                <ProtectedRoute
+                    exact path={'/app/dashboard'}
+                    component={Dashboard}
+                />
+            </BrowserRouter>
+        </React.Fragment>
     );
 }
 
